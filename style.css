@@ -1,4 +1,6 @@
-
+body{
+    height: auto;
+}
 #txt{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,10 +18,7 @@ background-image: linear-gradient(to right,rgb(184, 184, 248),rgb(94, 94, 244));
 padding: 20px;
 }
 .esquerda{
-    position: fixed;
-    left: 0%;
-    top: 0px;
-    height: 100%;
+    height: auto;
     width: 50%;
     background-image: linear-gradient(to right,rgb(195, 195, 239),rgb(184, 184, 248));
     border-right: 3px solid black;
@@ -29,3 +28,16 @@ padding: 20px;
     padding-top: 5px;
 }
 
+#fundo_cinza{
+    background-color: #292929;
+    border: 5px #292929 solid;
+    border-radius: 20px;
+}
+
+.ui.header.botao{
+    color: aliceblue;
+}
+
+.ui.segment{
+    background-color: #292929;
+}
