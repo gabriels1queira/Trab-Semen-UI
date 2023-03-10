@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Semantic UI</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="esquerda">
+                <nav>
+                    <div class="ui centered aligned padded grid">
+                        <button class="ui button"><a href="index.html">O Que é</a></button>
+                        <button class="ui button"><a href="como_utilizar.html">Como Utilizar</a></button>
+                        <button class="ui button"><a href="exemplos.html">Exemplos </a></button>
+                    </div>
+                    <br>
+                </div>
+                    <div class="ui centered aligned padded grid">
+                        <button class="ui huge inverted center aligned toggle button"><a href="na_pratica.html">Na Prática</a></button>
+                    </div>
+                </nav>
+                <h1 class="ui centered header">Mas como ficar bom nisso?<br>Praticando!</h1>
+                <p>Hora de botar a mão na massa!</p>
+                <p class="ui text">Como colocar um botão:</p>
+                <div class="ui padded inverted segment">
+                    <code class="ui code">&ltdiv class="ui basic button"&gt</code>
+                </div>
+                <p>Teste aí:</p>
+<input type="text" id="bbutton" class="ui fluid inverted purple segment input" placeholder='<div class="_______________">'>
+<input type="submit" onclick="teste()">
+<p id="resultado"></p>
+
+<script>
+function teste() {
+  let button = document.getElementById("bbutton").value;
+  if (button.indexOf('<div class="ui basic button">') !== -1) {
+    document.getElementById("resultado").textContent = "Certo";
+  } else {
+    document.getElementById("resultado").textContent = "Errado";
+  }
+}
+
+</script>
+
+    </body>
+</html>
