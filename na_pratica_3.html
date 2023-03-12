@@ -26,22 +26,22 @@
             
             <h1 class="ui centered header">Mas como ficar bom nisso?<br>Praticando!</h1>
             <h3>Hora de botar a mão na massa!</h3>
-            <p class="ui text">Como colocar um botão:</p>
-            <div class="ui padded inverted segment">
-                <code class="ui code">&ltdiv class="ui basic button"&gtBotão&lt/div&gt</code>
-            </div>
-            <p>Teste aí:</p>
-            <input type="text" id="bbutton" class="ui fluid inverted purple segment input" placeholder='<div class="_______________">'>
+            <p class="ui text">Agora sem a resposta na sua cara!</p>
+            <br>
+            <p>Como colocar o arquivo "ilustracao.png" uma imagem pequena?</p>
+            <h6>Lembrando sempre que para chamar o framework a classe deve começar com "ui"</h6>
+            <input type="text" id="bbutton" class="ui fluid inverted purple segment input" placeholder="Escreva o código aqui!">
             <input type="submit" onclick="teste()">
             <p id="resultado"></p>
-            <div class="ui basic button" style="display: none;">Botão</div>
+            <img src="ilustracao.png" class="ui small image" style="display:none;">
+
             
             <footer class="ui inverted footer segment">
-                <a href="exemplos.html">
+                <a href="na_pratica_2.html">
                     <button class="ui button"><i class="angle left icon"></i> Voltar</button>
                 </a>
       
-                <a href="na_pratica_2.html">
+                <a href="creditos.html">
                     <button class="ui button right"> Próximo <i class="angle right icon"></i></button>
                 </a> 
             </footer>
@@ -50,14 +50,14 @@
         function teste()
         {
             let button = document.getElementById("bbutton").value;
-            if (button.indexOf('<div class="ui basic button">Botão</div>') !== -1)
+            if (button.indexOf('<img src="ilustracao.png" class="ui small image">') !== -1)
             {
                 document.getElementById("resultado").textContent = "Certo!";
-                document.querySelector("div.ui.button").style.display = "inline";
+                document.querySelector("img.ui.small.image").style.display = "block";
             }
             else
             {
-            document.getElementById("resultado").textContent = "Errado, Tente de novo!";
+                document.getElementById("resultado").textContent = "Errado, Tente de novo!";
             }
         }
         </script>
