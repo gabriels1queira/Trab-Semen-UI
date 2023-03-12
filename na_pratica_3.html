@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Semantic UI</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="esquerda">
+            <nav>
+                <div class="ui centered aligned padded grid">
+                    <a href="index.html"><button class="ui button nav">O Que é</button></a>
+                    <a href="como_utilizar.html"><button class="ui button nav">Como Utilizar</button></a>
+                    <a href="exemplos.html"><button class="ui button nav">Exemplos</button></a>
+                </div>
+                <br>
+            </div>
+                <div class="ui centered aligned padded grid">
+                    <a href="na_pratica.html"><button class="ui huge inverted center aligned toggle nav button">Na Prática</button></a>
+                </div>
+            </nav>
+            
+            <h1 class="ui centered header">Mas como ficar bom nisso?<br>Praticando!</h1>
+            <h3>Hora de botar a mão na massa!</h3>
+            <p class="ui text">Agora sem a resposta na sua cara!</p>
+            <br>
+            <p>Como colocar o arquivo "ilustracao.png" uma imagem pequena?</p>
+            <h6>Lembrando sempre que para chamar o framework a classe deve começar com "ui"</h6>
+            <input type="text" id="bbutton" class="ui fluid inverted purple segment input" placeholder="Escreva o código aqui!">
+            <input type="submit" onclick="teste()">
+            <p id="resultado"></p>
+            <img src="ilustracao.png" class="ui small image" style="display:none;">
+
+            
+            <footer class="ui inverted footer segment">
+                <a href="na_pratica_2.html">
+                    <button class="ui button"><i class="angle left icon"></i> Voltar</button>
+                </a>
+      
+                <a href="creditos.html">
+                    <button class="ui button right"> Próximo <i class="angle right icon"></i></button>
+                </a> 
+            </footer>
+        </div>
+        <script>
+        function teste()
+        {
+            let button = document.getElementById("bbutton").value;
+            if (button.indexOf('<img src="ilustracao.png" class="ui small image">') !== -1)
+            {
+                document.getElementById("resultado").textContent = "Certo!";
+                document.querySelector("img.ui.small.image").style.display = "block";
+            }
+            else
+            {
+                document.getElementById("resultado").textContent = "Errado, Tente de novo!";
+            }
+        }
+        </script>
+
+    </body>
+</html>
